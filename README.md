@@ -1,5 +1,5 @@
 # movie-reminder
-save and send reminders of movies to watch that you heard about.
+Save and send reminders of movies to watch that you heard about.
 
 Initial commit of movie-reminder app.
 
