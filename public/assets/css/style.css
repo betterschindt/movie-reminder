@@ -1,0 +1,11 @@
+li {list-style-type: none;}
+
+
+.reminderThumb {
+    float: left;
+    display: block;
+    max-height:160px;
+    width: auto;
+    height: auto;
+    padding-right: 16px;
+}

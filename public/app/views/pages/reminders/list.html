@@ -1,0 +1,33 @@
+<div class="page-header">
+    <h1>
+        Reminders
+        <a href="/reminders/create" class="btn btn-default">
+            <span class="glyphicon glyphicon-plus"></span>
+            New Reminder
+        </a>
+    </h1>
+
+</div>
+
+
+<div class="jumbotron text-center" ng-show="list.processing">
+    <span class="glyphicon glyphicon-repeat spinner"></span>
+    <p>Loading Users...</p>
+</div>
+
+<div class="container-fluid" ng-show="list.reminders">
+    <ul class="movies">
+        <li ng-repeat="reminder in list.reminders" class="reminderContainer">
+            <div class=imgHolder">
+                <img class="reminderThumb" ng-src="{{reminder.poster}}">
+            </div>
+            <div class="reminderTitle" >{{reminder.title}}</div>
+            <div class="reminderDir" >{{reminder.director}}</div>
+            <div class="reminderGenre" >{{reminder.genre}}</div>
+            <div class="reminderComment" >{{reminder.comment}}</div>
+            <div class="moviePlot" >{{reminder.shortDesc}}</div>
+
+            <hr width="100%">
+        </li>
+    </ul>
+</div>

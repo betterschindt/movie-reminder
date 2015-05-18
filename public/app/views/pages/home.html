@@ -1,0 +1,15 @@
+<div class="jumbotron text-center">
+    <h1>Welcome!</h1>
+    <div ng-if="!main.loggedIn">
+        <p>Login to manage your Movie Reminders.</p>
+        <a href="/login" class="btn btn-primary">Login</a>
+    </div>
+    <div ng-if="!main.loggedIn">
+        <p>or sign up.</p>
+        <a href="/signup" class="btn btn-primary">Sign Up</a>
+    </div>
+    <div ng-if="main.loggedIn">
+        <p>Manage your users.</p>
+        <a href="/reminders" class="btn btn-primary">View Reminders</a>
+    </div>
+</div>
